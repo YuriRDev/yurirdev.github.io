@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {
   Container,
@@ -7,9 +7,18 @@ import {
   Title,
   UpperContainer,
   TextInfoContainer,
+  Cursor,
 } from "./styles";
 
 const Main: React.FC = () => {
+  const [cursorX, setCursorX] = useState(0);
+  const [cursorY, setCursorY] = useState(0);
+
+  window.addEventListener("mousemove", (e) => {
+    setCursorX(e.pageX);
+    setCursorY(e.pageY);
+  });
+
   return (
     <Container>
       <UpperContainer>
@@ -19,6 +28,14 @@ const Main: React.FC = () => {
           <About>{"UI Designer & Dev FullStack"}</About>
         </TextInfoContainer>
       </UpperContainer>
+
+      <Cursor
+        style={{
+          left: cursorX - 100,
+          top: cursorY - 100,
+        }}
+        id="cursor"
+      />
     </Container>
   );
 };

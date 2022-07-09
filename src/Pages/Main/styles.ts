@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+//@ts-ignore
+import background from "../../Assets/background-1.png";
+
 export const Container = styled.div`
   max-width: 930px;
   margin: 0px auto;
@@ -27,4 +30,21 @@ export const About = styled.p`
   margin-top: 12px;
   font-weight: 400;
   margin-left: 4px;
+`;
+
+/*
+    Cursor
+*/
+
+export const Cursor = styled.div`
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: center center no-repeat fixed;
+  background-size: cover;
+  border-radius: 40%;
+  z-index: -1;
+  background-image: url(${background});
+  transition: 0.1s;
+  box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.1);
 `;
