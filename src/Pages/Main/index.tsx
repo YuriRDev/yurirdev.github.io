@@ -69,7 +69,7 @@ const Main: React.FC = () => {
           top: showAll ? 0 : cursorY - 100,
           width: showAll ? "100vw" : 200,
           height: showAll ? "100vh" : 200,
-          transition: showAll ? "1s" : "0.2s",
+          transition: showAll ? "1s" : "0.1s",
           borderRadius: showAll ? 0 : "40%",
         }}
         id="cursor"
