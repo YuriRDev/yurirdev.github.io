@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { BiShow } from "react-icons/bi";
+
 import {
   Container,
   UpperTitle,
@@ -10,9 +12,13 @@ import {
   Cursor,
   LowerContainer,
   LineStyle,
+  RevealContainer,
+  RevealBtn,
 } from "./styles";
 
 const Main: React.FC = () => {
+  const [showAll, setShowAll] = useState(false);
+
   const [cursorX, setCursorX] = useState(0);
   const [cursorY, setCursorY] = useState(0);
 
@@ -29,6 +35,12 @@ const Main: React.FC = () => {
           <Title>Yuri Rousseff</Title>
           <About>{"UI Designer & Dev FullStack"}</About>
         </TextInfoContainer>
+        <RevealContainer>
+          <RevealBtn onClick={() => setShowAll(!showAll)}>
+            <BiShow size={32} color="#7C7A80" />
+          </RevealBtn>
+          <p>{!showAll ? "Reveal All" : "Unreveal"}</p>
+        </RevealContainer>
       </UpperContainer>
 
       <div

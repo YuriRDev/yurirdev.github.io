@@ -14,7 +14,13 @@ export const Container = styled.div`
   overflow: hidden;
 `;
 
-export const UpperContainer = styled.div``;
+export const UpperContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+`;
 
 export const TextInfoContainer = styled.div``;
 
@@ -31,7 +37,7 @@ export const Title = styled.h1`
 
 export const About = styled.p`
   font-size: 20px;
-  color: #7c7a80;
+  color: #b3b0b8;
   margin-top: 12px;
   font-weight: 400;
   margin-left: 4px;
@@ -55,6 +61,35 @@ export const LineStyle = styled.div`
   height: 30vh;
   width: 3px;
   background-color: #d0d0d0;
+`;
+
+/*
+  Button for reveal
+*/
+
+export const RevealContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  P {
+    font-size: 14px;
+    color: #7c7a80;
+    font-weight: 500;
+  }
+`;
+
+export const RevealBtn = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: solid 2px #7c7a80;
+  margin-bottom: 8px;
+  cursor: pointer;
+
+  border-radius: 15px;
 `;
 
 /*
