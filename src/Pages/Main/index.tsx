@@ -39,13 +39,20 @@ const Main: React.FC = () => {
           <Title style={showAll ? { color: "#fff", transition: "1s" } : {}}>
             Yuri Rousseff
           </Title>
-          <About>{"UI Designer & Dev FullStack"}</About>
+          <About style={showAll ? { color: "#CBCBCB", transition: "1s" } : {}}>
+            {"UI Designer & Dev FullStack"}
+          </About>
         </TextInfoContainer>
         <RevealContainer>
-          <RevealBtn onClick={() => setShowAll(!showAll)}>
-            <BiShow size={32} color="#7C7A80" />
+          <RevealBtn
+            style={showAll ? { borderColor: "#CBCBCB" } : {}}
+            onClick={() => setShowAll(!showAll)}
+          >
+            <BiShow size={32} color={showAll ? "#CBCBCB" : "#7C7A80"} />
           </RevealBtn>
-          <p>{!showAll ? "Reveal All" : "Unreveal"}</p>
+          <p style={showAll ? { color: "#CBCBCB" } : {}}>
+            {!showAll ? "Reveal All" : "Unreveal"}
+          </p>
         </RevealContainer>
       </UpperContainer>
 

@@ -12,6 +12,7 @@ export const Container = styled.div`
   justify-content: flex-start;
   flex-direction: column;
   overflow: hidden;
+  height: 100vh;
 `;
 
 export const UpperContainer = styled.div`
@@ -51,7 +52,7 @@ export const LowerContainer = styled.div`
   position: absolute;
   bottom: 0px;
   p {
-    color: #adadad;
+    color: #cbcbcb;
     font-size: 14px;
     font-weight: 600;
   }
@@ -104,7 +105,12 @@ export const Cursor = styled.div`
   background-size: cover;
   border-radius: 40%;
   z-index: -1;
-  background-image: url(${background});
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(${background});
   transition: 0.1s;
   box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.1);
 `;
