@@ -31,8 +31,14 @@ const Main: React.FC = () => {
     <Container>
       <UpperContainer>
         <TextInfoContainer>
-          <UpperTitle>Hey! I'm</UpperTitle>
-          <Title>Yuri Rousseff</Title>
+          <UpperTitle
+            style={showAll ? { color: "#fff", transition: "1s" } : {}}
+          >
+            Hey! I'm
+          </UpperTitle>
+          <Title style={showAll ? { color: "#fff", transition: "1s" } : {}}>
+            Yuri Rousseff
+          </Title>
           <About>{"UI Designer & Dev FullStack"}</About>
         </TextInfoContainer>
         <RevealContainer>
@@ -59,8 +65,12 @@ const Main: React.FC = () => {
 
       <Cursor
         style={{
-          left: cursorX - 100,
-          top: cursorY - 100,
+          left: showAll ? 0 : cursorX - 100,
+          top: showAll ? 0 : cursorY - 100,
+          width: showAll ? "100vw" : 200,
+          height: showAll ? "100vh" : 200,
+          transition: showAll ? "1s" : "0.2s",
+          borderRadius: showAll ? 0 : "40%",
         }}
         id="cursor"
       />
