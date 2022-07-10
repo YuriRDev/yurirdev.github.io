@@ -7,6 +7,11 @@ export const Container = styled.div`
   max-width: 930px;
   margin: 0px auto;
   padding-top: 250px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow: hidden;
 `;
 
 export const UpperContainer = styled.div``;
@@ -30,6 +35,26 @@ export const About = styled.p`
   margin-top: 12px;
   font-weight: 400;
   margin-left: 4px;
+`;
+
+export const LowerContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0px;
+  p {
+    color: #adadad;
+    font-size: 14px;
+    font-weight: 600;
+  }
+`;
+
+export const LineStyle = styled.div`
+  height: 30vh;
+  width: 3px;
+  background-color: #d0d0d0;
 `;
 
 /*

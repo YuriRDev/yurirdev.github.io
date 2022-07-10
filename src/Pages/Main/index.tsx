@@ -8,6 +8,8 @@ import {
   UpperContainer,
   TextInfoContainer,
   Cursor,
+  LowerContainer,
+  LineStyle,
 } from "./styles";
 
 const Main: React.FC = () => {
@@ -28,6 +30,20 @@ const Main: React.FC = () => {
           <About>{"UI Designer & Dev FullStack"}</About>
         </TextInfoContainer>
       </UpperContainer>
+
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <LowerContainer>
+          <p>SCROLL</p>
+          <LineStyle />
+        </LowerContainer>
+      </div>
 
       <Cursor
         style={{
