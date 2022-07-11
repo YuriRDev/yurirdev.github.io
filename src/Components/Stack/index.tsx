@@ -2,10 +2,18 @@ import React from "react";
 
 // import { Container } from './styles';
 
-const Stack: React.FC = () => {
+interface StackInterface {
+  title: string;
+  subtitle: string;
+  svg: any;
+  size: any;
+}
+
+const Stack: React.FC<StackInterface> = ({ title, subtitle, svg, size }) => {
   return (
     <div>
-      <h1>Hello</h1>
+      <h1>{title}</h1>
+      <h1>{subtitle}</h1>
     </div>
   );
 };
