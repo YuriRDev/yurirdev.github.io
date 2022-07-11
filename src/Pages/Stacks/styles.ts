@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-//@ts-ignore
-import background from "../../Assets/background-1.png";
-
 export const Container = styled.div`
   max-width: 1170px;
   margin: 0px auto;

@@ -1,6 +1,6 @@
 import React from "react";
 
-// import { Container } from './styles';
+import { Container, Name, SvgContainer, TextContainer, Time } from "./styles";
 
 interface StackInterface {
   title: string;
@@ -11,10 +11,13 @@ interface StackInterface {
 
 const Stack: React.FC<StackInterface> = ({ title, subtitle, svg, size }) => {
   return (
-    <div>
-      <h1>{title}</h1>
-      <h1>{subtitle}</h1>
-    </div>
+    <Container>
+      <SvgContainer src={svg} />
+      <TextContainer>
+        <Name>{title}</Name>
+        <Time>{subtitle}</Time>
+      </TextContainer>
+    </Container>
   );
 };
 
