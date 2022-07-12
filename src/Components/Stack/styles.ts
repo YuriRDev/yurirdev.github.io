@@ -13,6 +13,9 @@ export const Container = styled.div`
 
   background-color: #f5f5f5;
   border: solid 1px #d9d9d9;
+
+  margin-right: 24px;
+  margin-bottom: 32px;
 `;
 
 export const TextContainer = styled.div`

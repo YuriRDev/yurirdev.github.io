@@ -19,4 +19,6 @@ export const Title = styled.h1`
 
 export const StacksContainer = styled.div`
   margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
 `;
