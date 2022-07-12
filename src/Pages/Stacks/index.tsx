@@ -18,6 +18,13 @@ import reactnativeSVG from "../../Assets/Languages/react-native.svg"; //@ts-igno
 import figmaSVG from "../../Assets/Languages/figma.svg"; //@ts-ignore
 import mongodbSVG from "../../Assets/Languages/mongodb.svg"; //@ts-ignore
 
+interface StackItem {
+  title: string;
+  subtitle: string;
+  svg: any;
+  siize?: any;
+}
+
 const Stacks: React.FC = () => {
   const StacksList = [
     {
@@ -71,7 +78,7 @@ const Stacks: React.FC = () => {
     <Container>
       <Title>Stacks</Title>
       <StacksContainer style={{ display: "flex" }}>
-        {StacksList.map((item: any) => (
+        {StacksList.map((item: StackItem) => (
           <Stack title={item.title} subtitle={item.subtitle} svg={item.svg} />
         ))}
       </StacksContainer>
