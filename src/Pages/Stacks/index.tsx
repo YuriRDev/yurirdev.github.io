@@ -19,55 +19,61 @@ import figmaSVG from "../../Assets/Languages/figma.svg"; //@ts-ignore
 import mongodbSVG from "../../Assets/Languages/mongodb.svg"; //@ts-ignore
 
 const Stacks: React.FC = () => {
+  const StacksList = [
+    {
+      title: "Html",
+      subtitle: "+7 Years",
+      svg: htmlSVG,
+    },
+    {
+      title: "Css",
+      subtitle: "+7 Years",
+      svg: cssSVG,
+    },
+    {
+      title: "Javascript",
+      subtitle: "+7 Years",
+      svg: jsSVG,
+    },
+    {
+      title: "Typescript",
+      subtitle: "+3 Years",
+      svg: tsSVG,
+    },
+    {
+      title: "NodeJs",
+      subtitle: "+3 Years",
+      svg: nodeSVG,
+    },
+    {
+      title: "React",
+      subtitle: "+3 Years",
+      svg: reactSVG,
+    },
+    {
+      title: "React Native",
+      subtitle: "+3 Years",
+      svg: reactnativeSVG,
+    },
+    {
+      title: "UI Design",
+      subtitle: "+3 Years",
+      svg: figmaSVG,
+    },
+    {
+      title: "Mongoose",
+      subtitle: "+1 Year",
+      svg: mongodbSVG,
+    },
+  ];
+
   return (
     <Container>
       <Title>Stacks</Title>
       <StacksContainer style={{ display: "flex" }}>
-        <Stack
-          title="Html"
-          subtitle="+7 Years"
-          svg={htmlSVG}
-        />
-        <Stack
-          title="Css"
-          subtitle="+7 Years"
-          svg={cssSVG}
-        />
-        <Stack
-          title="Javascript"
-          subtitle="+7 Years"
-          svg={jsSVG}
-        />
-        <Stack
-          title="Typescript"
-          subtitle="+3 Years"
-          svg={tsSVG}
-        />
-        <Stack
-          title="NodeJS"
-          subtitle="+3 Years"
-          svg={nodeSVG}
-        />
-        <Stack
-          title="React"
-          subtitle="+3 Years"
-          svg={reactSVG}
-        />
-        <Stack
-          title="React Native"
-          subtitle="+3 Years"
-          svg={reactnativeSVG}
-        />
-        <Stack
-          title="Figma"
-          subtitle="+3 Years"
-          svg={figmaSVG}
-        />
-        <Stack
-          title="Mongoose"
-          subtitle="+1 Year"
-          svg={mongodbSVG}
-        />
+        {StacksList.map((item: any) => (
+          <Stack title={item.title} subtitle={item.subtitle} svg={item.svg} />
+        ))}
       </StacksContainer>
     </Container>
   );
