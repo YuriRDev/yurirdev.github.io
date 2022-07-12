@@ -6,7 +6,7 @@ interface StackInterface {
   title: string;
   subtitle: string;
   svg: any;
-  size: any;
+  size?: any;
 }
 
 const Stack: React.FC<StackInterface> = ({ title, subtitle, svg, size }) => {
