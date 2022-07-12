@@ -27,55 +27,46 @@ const Stacks: React.FC = () => {
           title="Html"
           subtitle="+7 Years"
           svg={htmlSVG}
-          size={{ height: 28, width: 32 }}
         />
         <Stack
           title="Css"
           subtitle="+7 Years"
           svg={cssSVG}
-          size={{ height: 28, width: 32 }}
         />
         <Stack
           title="Javascript"
           subtitle="+7 Years"
           svg={jsSVG}
-          size={{ height: 28, width: 32 }}
         />
         <Stack
           title="Typescript"
           subtitle="+3 Years"
           svg={tsSVG}
-          size={{ height: 28, width: 32 }}
         />
         <Stack
           title="NodeJS"
           subtitle="+3 Years"
           svg={nodeSVG}
-          size={{ height: 28, width: 32 }}
         />
         <Stack
           title="React"
           subtitle="+3 Years"
           svg={reactSVG}
-          size={{ height: 28, width: 32 }}
         />
         <Stack
           title="React Native"
           subtitle="+3 Years"
           svg={reactnativeSVG}
-          size={{ height: 28, width: 32 }}
         />
         <Stack
           title="Figma"
           subtitle="+3 Years"
           svg={figmaSVG}
-          size={{ height: 28, width: 32 }}
         />
         <Stack
           title="Mongoose"
           subtitle="+1 Year"
           svg={mongodbSVG}
-          size={{ height: 28, width: 32 }}
         />
       </StacksContainer>
     </Container>
