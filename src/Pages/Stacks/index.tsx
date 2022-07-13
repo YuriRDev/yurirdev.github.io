@@ -16,6 +16,7 @@ import nodeSVG from "../../Assets/Languages/node.svg"; //@ts-ignore
 import reactSVG from "../../Assets/Languages/react.svg"; //@ts-ignore
 import reactnativeSVG from "../../Assets/Languages/react-native.svg"; //@ts-ignore
 import figmaSVG from "../../Assets/Languages/figma.svg"; //@ts-ignore
+import boostrapSVG from "../../Assets/Languages/bootstrap.svg"; //@ts-ignore
 import mongodbSVG from "../../Assets/Languages/mongodb.svg"; //@ts-ignore
 
 interface StackItem {
@@ -66,6 +67,11 @@ const Stacks: React.FC = () => {
       title: "UI Design",
       subtitle: "+3 Years",
       svg: figmaSVG,
+    },
+    {
+      title: "Bootstrap",
+      subtitle: "+2 Years",
+      svg: boostrapSVG,
     },
     {
       title: "Mongoose",
