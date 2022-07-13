@@ -1,12 +1,19 @@
 import React from "react";
+import Project from "../../Components/Project";
 
-import { Container } from "./styles";
+import { BigContainer, Container, Title } from "./styles";
 
 const Projects: React.FC = () => {
   return (
-    <Container>
-      <h1>Projects page</h1>
-    </Container>
+    <BigContainer>
+      <Container>
+        <Title>My fav projects</Title>
+        <Project name={"Useless items"} />
+        <Project name={"Solar Vacation"} />
+        <Project name={"Instagram clone"} />
+        <Project name={"Moviax"} />
+      </Container>
+    </BigContainer>
   );
 };
 
