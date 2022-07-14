@@ -12,10 +12,14 @@ import linkSVG from "../../Assets/link.svg"; //@ts-ignore
 
 interface Project {
   name: string;
-  isOpen?: boolean;
+  photo?: any;
+
+  dribble?: string;
+  github?: string;
+  link?: string;
 }
 
-const Project: React.FC<Project> = ({ name }) => {
+const Project: React.FC<Project> = ({ name, photo, dribble, github, link }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
@@ -38,23 +42,38 @@ const Project: React.FC<Project> = ({ name }) => {
       </Title>
       {isOpen && (
         <LinkList>
-          {/** Dribbble */}
-          <LinkContainer>
-            <LinkSvg src={dribbbleSVG} />
-            <p style={{ color: "#B2215A" }}>Dribbble</p>
-          </LinkContainer>
+          {dribble && (
+            <LinkContainer
+              onClick={() => {
+                document.location.href = dribble;
+              }}
+            >
+              <LinkSvg src={dribbbleSVG} />
+              <p style={{ color: "#B2215A" }}>Dribbble</p>
+            </LinkContainer>
+          )}
 
-          {/** Github */}
-          <LinkContainer>
-            <LinkSvg src={githubSVG} />
-            <p style={{ color: "#020222" }}>Github</p>
-          </LinkContainer>
+          {github && (
+            <LinkContainer
+              onClick={() => {
+                document.location.href = github;
+              }}
+            >
+              <LinkSvg src={githubSVG} />
+              <p style={{ color: "#020222" }}>Github</p>
+            </LinkContainer>
+          )}
 
-          {/** Link */}
-          <LinkContainer>
-            <LinkSvg src={linkSVG} />
-            <p style={{ color: "#9C9C9C" }}>Site url</p>
-          </LinkContainer>
+          {link && (
+            <LinkContainer
+              onClick={() => {
+                document.location.href = link;
+              }}
+            >
+              <LinkSvg src={linkSVG} />
+              <p style={{ color: "#9C9C9C" }}>Site url</p>
+            </LinkContainer>
+          )}
         </LinkList>
       )}
     </div>
