@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 
-import { Container, Title } from "./styles";
+import { Container, LinkContainer, LinkList, LinkSvg, Title } from "./styles";
+
+//@ts-ignore
+import dribbbleSVG from "../../Assets/dribbble.svg"; //@ts-ignore
+import githubSVG from "../../Assets/github.svg"; //@ts-ignore
+import linkSVG from "../../Assets/link.svg"; //@ts-ignore
 
 interface Project {
   name: string;
@@ -11,21 +16,34 @@ const Project: React.FC<Project> = ({ name }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <div
-      onClick={() => {
-        setIsOpen(!isOpen);
-      }}
-    >
-      <Title>{name}</Title>
+    <div>
+      <Title
+        onClick={() => {
+          setIsOpen(!isOpen);
+        }}
+      >
+        {name}
+      </Title>
       {isOpen && (
-        <div>
-          <div>
-            <text>Dribble</text>
-          </div>
-          <div>
-            <text>GitHub </text>
-          </div>
-        </div>
+        <LinkList>
+          {/** Dribbble */}
+          <LinkContainer>
+            <LinkSvg src={dribbbleSVG} />
+            <p style={{ color: "#B2215A" }}>Dribbble</p>
+          </LinkContainer>
+
+          {/** Github */}
+          <LinkContainer>
+            <LinkSvg src={githubSVG} />
+            <p style={{ color: "#020222" }}>Github</p>
+          </LinkContainer>
+
+          {/** Link */}
+          <LinkContainer>
+            <LinkSvg src={linkSVG} />
+            <p style={{ color: "#9C9C9C" }}>Site url</p>
+          </LinkContainer>
+        </LinkList>
       )}
     </div>
   );
