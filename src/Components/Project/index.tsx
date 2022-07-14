@@ -30,7 +30,7 @@ const Project: React.FC<Project> = ({ name, photo, dribble, github, link }) => {
         style={
           isOpen
             ? {
-                backgroundImage: `url(${background})`,
+                backgroundImage: `url(${photo})`,
               }
             : {}
         }
