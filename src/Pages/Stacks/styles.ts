@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const BigContainer = styled.div`
+  background-color: #fafafa;
+  width: 100vw;
+  display: flex;
+`;
+
 export const Container = styled.div`
   max-width: 1170px;
   margin: 0px auto;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Stack from "../../Components/Stack";
 
-import { Container, Title, StacksContainer } from "./styles";
+import { Container, Title, StacksContainer, BigContainer } from "./styles";
 
 /*
   Importing SVG files
@@ -81,14 +81,16 @@ const Stacks: React.FC = () => {
   ];
 
   return (
-    <Container>
-      <Title>Stacks</Title>
-      <StacksContainer style={{ display: "flex" }}>
-        {StacksList.map((item: StackItem) => (
-          <Stack title={item.title} subtitle={item.subtitle} svg={item.svg} />
-        ))}
-      </StacksContainer>
-    </Container>
+    <BigContainer>
+      <Container>
+        <Title>Stacks</Title>
+        <StacksContainer style={{ display: "flex" }}>
+          {StacksList.map((item: StackItem) => (
+            <Stack title={item.title} subtitle={item.subtitle} svg={item.svg} />
+          ))}
+        </StacksContainer>
+      </Container>
+    </BigContainer>
   );
 };
 
