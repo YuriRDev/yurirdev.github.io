@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const BigContainer = styled.div`
   width: 100%;
-  background-color: #fff;
+  background: #fff;
+  transition: 0.2s;
 `;
 
 export const Container = styled.div`
