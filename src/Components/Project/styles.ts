@@ -10,10 +10,12 @@ export const Title = styled.h1`
 
   cursor: pointer;
 
+  -webkit-background-clip: text;
   transition: 0.2s;
 
   &:hover {
-    color: #e1e1e1;
+    color: ${(props: any) => (props.active ? "transparent" : "#e1e1e1")};
+    opacity: ${(props: any) => (props.active ? "0.8" : "1")};
   }
 `;
 
@@ -39,6 +41,13 @@ export const LinkContainer = styled.div`
   border-radius: 5px;
 
   margin-right: 16px;
+  cursor: pointer;
+
+  transition: 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 export const LinkSvg = styled.img`

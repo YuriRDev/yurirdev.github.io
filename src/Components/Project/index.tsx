@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import { Container, LinkContainer, LinkList, LinkSvg, Title } from "./styles";
 
 //@ts-ignore
+import background from "../../Assets/background-1.png";
+
+//@ts-ignore
 import dribbbleSVG from "../../Assets/dribbble.svg"; //@ts-ignore
 import githubSVG from "../../Assets/github.svg"; //@ts-ignore
 import linkSVG from "../../Assets/link.svg"; //@ts-ignore
@@ -18,6 +21,15 @@ const Project: React.FC<Project> = ({ name }) => {
   return (
     <div>
       <Title
+        //@ts-ignore
+        active={isOpen}
+        style={
+          isOpen
+            ? {
+                backgroundImage: `url(${background})`,
+              }
+            : {}
+        }
         onClick={() => {
           setIsOpen(!isOpen);
         }}
