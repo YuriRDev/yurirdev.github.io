@@ -1,5 +1,5 @@
 # 🌎 Web Portfolio 📃
-⚠ *Not responsive **yet***
+🔴 *Not responsive **yet***
 
 💻React, Styled-Components, Typescript
 
