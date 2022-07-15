@@ -1,6 +1,6 @@
 {
   "homepage": "https://yurirdev.github.io/web-portfolio",
-  "name": "webpotfolio",
+  "name": "web-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
