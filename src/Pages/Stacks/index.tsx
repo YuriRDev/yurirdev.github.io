@@ -84,7 +84,7 @@ const Stacks: React.FC = () => {
     <BigContainer>
       <Container>
         <Title>Stacks</Title>
-        <StacksContainer style={{ display: "flex" }}>
+        <StacksContainer>
           {StacksList.map((item: StackItem) => (
             <Stack title={item.title} subtitle={item.subtitle} svg={item.svg} />
           ))}

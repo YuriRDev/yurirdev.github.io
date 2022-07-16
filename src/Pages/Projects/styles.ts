@@ -4,6 +4,8 @@ export const BigContainer = styled.div`
   width: 100%;
   background: #fff;
   transition: 0.2s;
+
+
 `;
 
 export const Container = styled.div`
@@ -17,6 +19,7 @@ export const Container = styled.div`
   overflow: hidden;
   height: 100vh;
   z-index: 2;
+
 `;
 
 export const Title = styled.h1`
