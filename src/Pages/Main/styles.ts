@@ -21,7 +21,15 @@ export const Container = styled.div`
   }
 
   @media (max-width: 600px) {
-    padding-top: 100px;
+    padding-top: 128px;
+    position: relative;
+    background-size: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(${background});
   }
 `;
 
@@ -43,11 +51,17 @@ export const UpperTitle = styled.h2`
   color: #101114;
   font-size: 32px;
   font-weight: 700;
+  @media (max-width: 600px) {
+    color: #fff;
+  }
 `;
 
 export const Title = styled.h1`
   font-size: 40px;
   font-weight: 700;
+  @media (max-width: 600px) {
+    color: #fff;
+  }
 `;
 
 export const About = styled.p`
@@ -77,8 +91,8 @@ export const LineStyle = styled.div`
   width: 3px;
   background-color: #d0d0d0;
   @media (max-width: 600px) {
-    height: 15vh;
-}
+    height: 22vh;
+  }
 `;
 
 /*
