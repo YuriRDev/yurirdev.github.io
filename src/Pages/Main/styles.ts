@@ -13,6 +13,12 @@ export const Container = styled.div`
   flex-direction: column;
   overflow: hidden;
   height: 100vh;
+
+  @media (max-width: 1240px) {
+    width: 100%;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
 `;
 
 export const UpperContainer = styled.div`
