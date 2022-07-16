@@ -19,6 +19,10 @@ export const Container = styled.div`
     padding-right: 24px;
     padding-left: 24px;
   }
+
+  @media (max-width: 600px) {
+    padding-top: 100px;
+  }
 `;
 
 export const UpperContainer = styled.div`
@@ -27,6 +31,10 @@ export const UpperContainer = styled.div`
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 export const TextInfoContainer = styled.div``;
@@ -68,6 +76,9 @@ export const LineStyle = styled.div`
   height: 30vh;
   width: 3px;
   background-color: #d0d0d0;
+  @media (max-width: 600px) {
+    height: 15vh;
+}
 `;
 
 /*
@@ -79,6 +90,10 @@ export const RevealContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 
   P {
     font-size: 14px;
@@ -119,4 +134,8 @@ export const Cursor = styled.div`
     url(${background});
   transition: 0.1s;
   box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
