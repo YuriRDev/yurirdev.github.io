@@ -21,3 +21,4 @@ To build, simply use
 ## Demo 🚀
 
 https://yurirdev.github.io/web-portfolio
+*It is kinda laggy, cause it's hosted on GH pages*
