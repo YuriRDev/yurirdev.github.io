@@ -67,6 +67,8 @@ margin-bottom: 16px;
 
   @media (max-width: 600px) {
     font-size: 14px;
+    margin-right: 8px;
+    margin-bottom: 12px
   }
 `;
 

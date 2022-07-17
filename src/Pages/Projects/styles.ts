@@ -15,7 +15,7 @@ export const Container = styled.div`
   justify-content: flex-start;
   flex-direction: column;
   overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
   z-index: 2;
 
   @media (max-width: 1240px) {
