@@ -3,8 +3,11 @@
 💻React, Styled-Components, Typescript
 
 
+### To-do ⚒
+- Motion effects w/ Framer Motion  
 
-## Build 🎞
+
+### Build 🎞
 
 To build, simply use 
 
