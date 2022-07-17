@@ -37,9 +37,12 @@ export const LinkList = styled.div`
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
+
+  flex-wrap: wrap;
 `;
 
 export const LinkContainer = styled.div`
+margin-bottom: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,8 +64,17 @@ export const LinkContainer = styled.div`
   &:hover {
     opacity: 0.8;
   }
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
 `;
 
 export const LinkSvg = styled.img`
   margin-right: 8px;
+
+  @media (max-width: 600px) {
+    width: 18px;
+    height: 18px;
+}
 `;
