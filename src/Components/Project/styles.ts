@@ -17,6 +17,19 @@ export const Title = styled.h1`
     color: ${(props: any) => (props.active ? "transparent" : "#e1e1e1")};
     opacity: ${(props: any) => (props.active ? "0.8" : "1")};
   }
+
+  @media (max-width: 600px) {
+    font-size: 52px;
+  }
+  
+  @media (max-width: 500px) {
+    font-size: 42px;
+  }
+  
+  @media (max-width: 410px) {
+    font-size: 36px;
+  }
+
 `;
 
 export const LinkList = styled.div`

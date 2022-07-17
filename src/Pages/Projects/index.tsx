@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
   return (
     <BigContainer style={{}}>
       <Container>
-        <Title>My fav projects</Title>
+        <Title>Last projects</Title>
         <Project
           name={"Useless items"}
           dribble={"https://dribbble.com/shots/17598729-Useless-Items"}
