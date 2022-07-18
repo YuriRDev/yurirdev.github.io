@@ -1,7 +1,7 @@
 {
-  "homepage": "https://yurirdev.github.io/web-portfolio",
-  "name": "web-portfolio",
-  "version": "0.1.0",
+  "homepage": "https://yurirdev.github.io",
+  "name": "yurirdev.github.io",
+  "version": "1.2.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
