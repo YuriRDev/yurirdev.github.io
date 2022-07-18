@@ -5,6 +5,7 @@
 
 ### To-do ⚒
 - Motion effects w/ Framer Motion  
+- Downloadable pdf? maybe idk
 
 
 ### Build 🎞
