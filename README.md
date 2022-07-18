@@ -8,18 +8,6 @@
 - Downloadable pdf? maybe idk
 
 
-### Build 🎞
-
-To build, simply use 
-
-```bash
-  yarn install
-```
-```bash
-  yarn build
-```
-
-
 
 ## Demo 🚀
 
